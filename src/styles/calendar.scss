@@ -1,5 +1,5 @@
 .calendar {
-  width: 707px;
+  width: (7 * $day-size) + (6 * $gap-days-block);
   padding: 10px;
   display: flex;
   flex-flow: row;
@@ -29,7 +29,6 @@
       background-color: #ffbfcb;
       cursor: pointer;
       transform: translateY(-20px);
-      transition-duration: 500ms;
     }
 
     @for $i from 1 through 31 {
@@ -37,7 +36,6 @@
         content: '#{$i}';
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
-        transform: translateX(0.6px);
       }
     }
   }
